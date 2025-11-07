@@ -32,7 +32,7 @@ const Projects = () => {
         </h2>
         <div 
           ref={gridRef}
-          className="grid md:grid-cols-3 gap-8"
+          className="grid md:grid-cols-2 gap-8 justify-items-center"
         >
           {projects.map((project, idx) => (
             <div
