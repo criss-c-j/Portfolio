@@ -7,7 +7,7 @@ const HallOfFame = () => {
   const companies = [
     { 
       name: "Swiggy",
-      logo: "https://1000logos.net/wp-content/uploads/2021/05/Swiggy-logo.jpg",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/1/13/Swiggy_logo.png",
     },
     { 
       name: "TikTok",
@@ -27,7 +27,7 @@ const HallOfFame = () => {
     },
     { 
       name: "Brave",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/8/83/Brave_Browser_Logo.svg",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/Brave_icon_lionface.png",
     },
     { 
       name: "Opera",
@@ -63,7 +63,7 @@ const HallOfFame = () => {
               <img
                 src={company.logo}
                 alt={`${company.name} logo`}
-                className="w-16 h-16 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                className="w-16 h-16 object-contain filter transition-all duration-300"
               />
               <span className="text-sm font-mono text-muted-foreground">
                 {company.name}
