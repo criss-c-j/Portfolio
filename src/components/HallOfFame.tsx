@@ -5,13 +5,34 @@ const HallOfFame = () => {
   const { ref: subtitleRef, isVisible: subtitleVisible } = useScrollAnimation();
   const { ref: logosRef, isVisible: logosVisible } = useScrollAnimation();
   const companies = [
-    { name: "Swiggy"},
-    { name: "TikTok"},
-    { name: "BMW"},
-    { name: "LinkedIn"},
-    { name: "OpenAI"},
-    { name: "Brave"},
-    { name: "Opera" },
+    { 
+      name: "Swiggy",
+      logo: "https://upload.wikimedia.org/wikipedia/en/1/12/Swiggy_logo.svg",
+    },
+    { 
+      name: "TikTok",
+      logo: "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg",
+    },
+    { 
+      name: "BMW",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg",
+    },
+    { 
+      name: "LinkedIn",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg",
+    },
+    { 
+      name: "OpenAI",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg",
+    },
+    { 
+      name: "Brave",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/8/83/Brave_Browser_Logo.svg",
+    },
+    { 
+      name: "Opera",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/4/49/Opera_2015_icon.svg",
+    },
   ];
 
   return (
@@ -34,15 +55,20 @@ const HallOfFame = () => {
           className="flex flex-wrap items-center justify-center gap-8 md:gap-12"
         >
           {companies.map((company, idx) => (
-            <a
+            <div
               key={idx}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`text-xl md:text-2xl font-mono font-semibold text-muted-foreground hover:text-primary transition-all duration-700 ${logosVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+              className={`flex flex-col items-center gap-2 transition-all duration-700 ${logosVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
               style={{ transitionDelay: `${idx * 100 + 200}ms` }}
             >
-              {company.name}
-            </a>
+              <img
+                src={company.logo}
+                alt={`${company.name} logo`}
+                className="w-16 h-16 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+              />
+              <span className="text-sm font-mono text-muted-foreground">
+                {company.name}
+              </span>
+            </div>
           ))}
         </div>
       </div>
