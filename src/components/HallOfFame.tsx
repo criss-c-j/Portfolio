@@ -7,7 +7,7 @@ const HallOfFame = () => {
   const companies = [
     { 
       name: "Swiggy",
-      logo: "https://upload.wikimedia.org/wikipedia/en/1/12/Swiggy_logo.svg",
+      logo: "https://1000logos.net/wp-content/uploads/2021/05/Swiggy-logo.jpg",
     },
     { 
       name: "TikTok",
