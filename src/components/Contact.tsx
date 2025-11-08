@@ -138,7 +138,7 @@ const Contact = () => {
               </a>
             </div>
             <div className="pt-6">
-              <p className="text-sm text-muted-foreground border-l-2 border-primary pl-4">
+              <p className="text-sm text-muted-foreground border-l-2 border-border pl-4 hover:border-primary transition-colors">
                 <strong className="text-foreground">Response Time:</strong><br />
                 I typically respond to security-related inquiries within 24-48 hours. 
                 For urgent security matters, please use email.
