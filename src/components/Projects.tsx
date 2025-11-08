@@ -32,7 +32,7 @@ const Projects = () => {
         </h2>
         <div 
           ref={gridRef}
-          className="grid md:grid-cols-2 gap-8 justify-items-center"
+          className="grid md:grid-cols-3 gap-8"
         >
           {projects.map((project, idx) => (
             <div
@@ -40,7 +40,7 @@ const Projects = () => {
               className={`border border-border bg-card p-6 rounded-sm hover:border-primary transition-all duration-700 ${gridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
               style={{ transitionDelay: `${idx * 100}ms` }}
             >
-              <h3 className="text-xl font-mono font-semibold text-foreground mb-3">
+              <h3 className="text-xl font-mono font-semibold text-primary mb-3">
                 {project.title}
               </h3>
               <p className="text-muted-foreground mb-4 leading-relaxed">
