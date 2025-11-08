@@ -84,25 +84,25 @@ const HallOfFame = () => {
         >
           <div className="marquee-track gap-8 md:gap-12">
             {companies.map((company, idx) => (
-              <div key={`a-${idx}`} className="flex flex-col items-center gap-2">
+              <div key={`a-${idx}`} className="flex flex-col items-center gap-3">
                 <img
                   src={company.logo}
                   alt={`${company.name} logo`}
                   className="w-16 h-16 object-contain transition-all duration-300"
                 />
-                <span className="text-sm font-mono text-muted-foreground whitespace-nowrap hover:text-primary transition-colors cursor-pointer">
+                <span className="px-3 py-1.5 bg-card border border-border text-muted-foreground text-sm font-mono rounded-sm hover:border-primary hover:text-primary transition-colors whitespace-nowrap">
                   {company.name}
                 </span>
               </div>
             ))}
             {companies.map((company, idx) => (
-              <div key={`b-${idx}`} className="flex flex-col items-center gap-2" aria-hidden="true">
+              <div key={`b-${idx}`} className="flex flex-col items-center gap-3" aria-hidden="true">
                 <img
                   src={company.logo}
                   alt=""
                   className="w-16 h-16 object-contain transition-all duration-300"
                 />
-                <span className="text-sm font-mono text-muted-foreground whitespace-nowrap hover:text-primary transition-colors cursor-pointer">
+                <span className="px-3 py-1.5 bg-card border border-border text-muted-foreground text-sm font-mono rounded-sm hover:border-primary hover:text-primary transition-colors whitespace-nowrap">
                   {company.name}
                 </span>
               </div>
