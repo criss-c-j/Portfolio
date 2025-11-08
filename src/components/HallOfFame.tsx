@@ -90,7 +90,7 @@ const HallOfFame = () => {
                   alt={`${company.name} logo`}
                   className="w-16 h-16 object-contain transition-all duration-300"
                 />
-                <span className="text-sm font-mono text-muted-foreground whitespace-nowrap">
+                <span className="text-sm font-mono text-muted-foreground whitespace-nowrap hover:text-primary transition-colors cursor-pointer">
                   {company.name}
                 </span>
               </div>
@@ -102,7 +102,7 @@ const HallOfFame = () => {
                   alt=""
                   className="w-16 h-16 object-contain transition-all duration-300"
                 />
-                <span className="text-sm font-mono text-muted-foreground whitespace-nowrap">
+                <span className="text-sm font-mono text-muted-foreground whitespace-nowrap hover:text-primary transition-colors cursor-pointer">
                   {company.name}
                 </span>
               </div>
