@@ -5,7 +5,7 @@ const Navigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "skills", "experience", "projects", "certifications", "contact"];
+      const sections = ["home", "about", "skills", "experience", "projects","ctfsrecognition", "certifications","halloffame", "contact"];
       const current = sections.find((section) => {
         const element = document.getElementById(section);
         if (element) {
