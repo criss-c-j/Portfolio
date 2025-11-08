@@ -28,16 +28,16 @@ const Hero = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-2xl mx-auto">
           <Button
-            onClick={() => scrollToSection("projects")}
-            className="bg-primary text-background hover:bg-accent font-mono w-full sm:w-1/3"
-          >
-            View Work
-          </Button>
-          <Button
             onClick={() => scrollToSection("experience")}
             className="bg-primary text-background hover:bg-accent font-mono w-full sm:w-1/3"
           >
             Experience
+          </Button>
+          <Button
+            onClick={() => scrollToSection("projects")}
+            className="bg-primary text-background hover:bg-accent font-mono w-full sm:w-1/3"
+          >
+            View Work
           </Button>
           <Button
             onClick={() => scrollToSection("contact")}
