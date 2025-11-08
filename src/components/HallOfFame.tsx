@@ -64,24 +64,34 @@ const HallOfFame = () => {
         </p>
         <div 
           ref={logosRef}
-          className="flex flex-wrap items-center justify-center gap-8 md:gap-12"
+          className={`marquee transition-all duration-700 ${logosVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
         >
-          {companies.map((company, idx) => (
-            <div
-              key={idx}
-              className={`flex flex-col items-center gap-2 transition-all duration-700 ${logosVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-              style={{ transitionDelay: `${idx * 100 + 200}ms` }}
-            >
-              <img
-                src={company.logo}
-                alt={`${company.name} logo`}
-                className="w-16 h-16 object-contain filter transition-all duration-300"
-              />
-              <span className="text-sm font-mono text-muted-foreground">
-                {company.name}
-              </span>
-            </div>
-          ))}
+          <div className="marquee-track gap-8 md:gap-12">
+            {companies.map((company, idx) => (
+              <div key={`a-${idx}`} className="flex flex-col items-center gap-2">
+                <img
+                  src={company.logo}
+                  alt={`${company.name} logo`}
+                  className="w-16 h-16 object-contain transition-all duration-300"
+                />
+                <span className="text-sm font-mono text-muted-foreground whitespace-nowrap">
+                  {company.name}
+                </span>
+              </div>
+            ))}
+            {companies.map((company, idx) => (
+              <div key={`b-${idx}`} className="flex flex-col items-center gap-2" aria-hidden="true">
+                <img
+                  src={company.logo}
+                  alt=""
+                  className="w-16 h-16 object-contain transition-all duration-300"
+                />
+                <span className="text-sm font-mono text-muted-foreground whitespace-nowrap">
+                  {company.name}
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
