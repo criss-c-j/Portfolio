@@ -58,7 +58,7 @@ const Experience = () => {
           ref={quoteRef}
           className={`mt-12 text-center transition-all duration-700 delay-200 ${quoteVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
         >
-          <blockquote className="text-lg text-muted-foreground font-mono italic border-l-4 border-primary pl-6 max-w-3xl mx-auto">
+          <blockquote className="text-lg text-muted-foreground font-mono italic border-l-4 border-border pl-6 max-w-3xl mx-auto hover:border-primary transition-colors">
             "Security is not a product, but a process. Every vulnerability discovered and responsibly 
             disclosed makes the digital world a little bit safer for everyone."
           </blockquote>
