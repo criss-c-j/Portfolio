@@ -22,6 +22,18 @@ const HallOfFame = () => {
       logo: "https://lh4.googleusercontent.com/proxy/giEDaX3GfzFq-HAvCa_92K-8lRvuedIQiGrBvxVAqXdRmXoNj-CTe0nJNJVM5P5DYZV7m3imSRVlx7YAPVu4gurNo4jSVXJ8d220_ZWhCyqz08KE53GqC54ayElFbrNb92iOdZMfYXz6",
     },
     { 
+      name: "Microsoft",
+      logo: "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/RWCZER-Legal-IP-Trademarks-CP-MS-logo-740x417-1?wid=406&hei=230&fit=crop&resSharp=1",
+    },
+    { 
+      name: "Hackerone",
+      logo: "https://logowik.com/content/uploads/images/hackerone5828.jpg",
+    },
+    { 
+      name: "Firefox",
+      logo: "https://www.cnet.com/a/img/resize/33dd106f367bb2e25272cba2c532cd4b93a6e7d9/hub/2019/06/05/644162fd-5f99-4a9c-becf-37ebcf2d97ea/firefox-new-icon-2019-06.jpg?auto=webp&fit=crop&height=900&width=1200",
+    },
+    { 
       name: "Brave",
       logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/Brave_icon_lionface.png",
     },
@@ -44,6 +56,10 @@ const HallOfFame = () => {
     { 
       name: "Swiggy",
       logo: "https://upload.wikimedia.org/wikipedia/commons/1/13/Swiggy_logo.png",
+    },
+    { 
+      name: "Affirm",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Affirm_logo.svg/2560px-Affirm_logo.svg.png",
     },
   ];
 
