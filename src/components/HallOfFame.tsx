@@ -28,10 +28,10 @@ const HallOfFame = () => {
     { 
       name: "Opera",
       logo: "https://upload.wikimedia.org/wikipedia/commons/4/49/Opera_2015_icon.svg",
+    },
     { 
       name: "Samsung",
       logo: "https://1000logos.net/wp-content/uploads/2017/06/Font-Samsung-Logo.jpg",
-    },
     },
     { 
       name: "Swiggy",
