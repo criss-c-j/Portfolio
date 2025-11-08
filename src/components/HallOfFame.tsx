@@ -6,10 +6,6 @@ const HallOfFame = () => {
   const { ref: logosRef, isVisible: logosVisible } = useScrollAnimation();
   const companies = [
     { 
-      name: "Swiggy",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/1/13/Swiggy_logo.png",
-    },
-    { 
       name: "TikTok",
       logo: "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg",
     },
@@ -32,6 +28,10 @@ const HallOfFame = () => {
     { 
       name: "Opera",
       logo: "https://upload.wikimedia.org/wikipedia/commons/4/49/Opera_2015_icon.svg",
+    },
+    { 
+      name: "Swiggy",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/1/13/Swiggy_logo.png",
     },
   ];
 
