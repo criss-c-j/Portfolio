@@ -52,7 +52,7 @@ const HallOfFame = () => {
       <div className="container mx-auto max-w-6xl">
         <h2 
           ref={titleRef}
-          className={`text-3xl md:text-4xl font-mono font-bold text-foreground mb-8 text-center transition-all duration-700 ${titleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+          className={`text-3xl md:text-4xl font-mono font-bold text-foreground mb-8 transition-all duration-700 ${titleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
         >
           Security Hall of Fame
         </h2>
