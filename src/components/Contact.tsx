@@ -22,12 +22,13 @@ const Contact = () => {
   
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [errors, setErrors] = useState<{ name?: string; email?: string; message?: string }>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     const result = contactSchema.safeParse(formData);
-    
+
     if (!result.success) {
       const fieldErrors: { name?: string; email?: string; message?: string } = {};
       result.error.errors.forEach((err) => {
@@ -40,11 +41,49 @@ const Contact = () => {
     }
 
     setErrors({});
-    toast({
-      title: "Message sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
-    });
-    setFormData({ name: "", email: "", message: "" });
+    setIsSubmitting(true);
+
+    try {
+      const resp = await fetch("https://formspree.io/f/meovjono", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
+
+      const data = await resp.json().catch(() => ({}));
+
+      if (!resp.ok) {
+        // Formspree can return validation errors in the response
+        const errMsg = data.error || data.message || "Failed to send message. Please try again later.";
+        toast({
+          title: "Error",
+          description: String(errMsg),
+          variant: "destructive",
+        });
+      } else {
+        toast({
+          title: "Message sent!",
+          description: "Thank you for reaching out. I'll get back to you soon.",
+        });
+        setFormData({ name: "", email: "", message: "" });
+      }
+    } catch (err) {
+      console.error(err);
+      toast({
+        title: "Network error",
+        description: "Unable to send message. Please check your connection and try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -141,8 +180,8 @@ const Contact = () => {
               />
               {errors.message && <p className="text-destructive text-sm mt-1">{errors.message}</p>}
             </div>
-              <Button type="submit" className="w-full bg-primary text-background hover:bg-accent font-mono">
-                Send Message
+              <Button type="submit" disabled={isSubmitting} className="w-full bg-primary text-background hover:bg-accent font-mono" aria-busy={isSubmitting}>
+                {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
             </form>
           </div>
