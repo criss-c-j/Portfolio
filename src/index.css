@@ -80,9 +80,6 @@ All colors MUST be HSL.
     will-change: transform;
     animation: marquee-left 30s linear infinite;
   }
-  .marquee:hover .marquee-track {
-    animation-play-state: paused; /* Optional: pause on hover */
-  }
   @keyframes marquee-left {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
