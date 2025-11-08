@@ -39,7 +39,7 @@ const HallOfFame = () => {
     },    
     { 
       name: "Supabase",
-      logo: "https://files.svgcdn.io/logos/supabase.png",
+      logo: "https://miro.medium.com/1*znpVac0II45Ysa0xIiB2dQ.png",
     },
     { 
       name: "Swiggy",
