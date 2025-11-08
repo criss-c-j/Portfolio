@@ -50,7 +50,7 @@ const Projects = () => {
                 {project.tags.map((tag, tagIdx) => (
                   <span
                     key={tagIdx}
-                    className="px-2 py-1 bg-secondary border border-border text-muted-foreground text-xs font-mono rounded-sm"
+                    className="px-2 py-1 bg-secondary border border-border text-muted-foreground text-xs font-mono rounded-sm hover:border-primary hover:text-primary transition-colors"
                   >
                     {tag}
                   </span>
