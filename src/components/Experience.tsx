@@ -20,7 +20,7 @@ const Experience = () => {
             ref={leftRef}
             className={`transition-all duration-700 ${leftVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
           >
-            <div className="border border-border p-6 rounded-sm bg-card hover:border-primary transition-all">
+            <div className="border border-border p-6 rounded-sm bg-card hover:border-primary transition-all duration-700">
               <h3 className="text-xl font-mono font-semibold text-primary mb-4">
                 AI / ML Security
               </h3>
@@ -35,7 +35,7 @@ const Experience = () => {
             ref={rightRef}
             className={`transition-all duration-700 delay-100 ${rightVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
           >
-            <div className="border border-border p-6 rounded-sm bg-card hover:border-primary transition-all">
+            <div className="border border-border p-6 rounded-sm bg-card hover:border-primary transition-all duration-700">
               <h3 className="text-xl font-mono font-semibold text-primary mb-4">
                 Web & Mobile Security
               </h3>
