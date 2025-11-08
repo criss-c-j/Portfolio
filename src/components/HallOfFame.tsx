@@ -34,6 +34,14 @@ const HallOfFame = () => {
       logo: "https://1000logos.net/wp-content/uploads/2017/06/Font-Samsung-Logo.jpg",
     },
     { 
+      name: "Grok",
+      logo: "https://images.seeklogo.com/logo-png/61/2/grok-logo-png_seeklogo-615650.png",
+    },    
+    { 
+      name: "Supabase",
+      logo: "hhttps://files.svgcdn.io/logos/supabase.png",
+    },
+    { 
       name: "Swiggy",
       logo: "https://upload.wikimedia.org/wikipedia/commons/1/13/Swiggy_logo.png",
     },
