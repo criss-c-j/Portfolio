@@ -47,7 +47,7 @@ const HallOfFame = () => {
     },
     { 
       name: "Grok",
-      logo: "https://images.seeklogo.com/logo-png/61/2/grok-logo-png_seeklogo-615650.png",
+      logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqRpkrX2tkKwMgyMNhqNE-8YvZH49AGJWTHA&s",
     },    
     { 
       name: "Supabase",
