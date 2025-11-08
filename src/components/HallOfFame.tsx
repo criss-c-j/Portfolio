@@ -1,4 +1,3 @@
-import { Shield } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const HallOfFame = () => {
@@ -7,12 +6,8 @@ const HallOfFame = () => {
   const { ref: logosRef, isVisible: logosVisible } = useScrollAnimation();
   const companies = [
     { 
-      name: "Swiggy",
-      logo: "https://upload.wikimedia.org/wikipedia/en/1/12/Swiggy_logo.svg",
-    },
-    { 
       name: "TikTok",
-      logo: "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg",
+      logo: "https://www.logo.wine/a/logo/TikTok/TikTok-Logomark%26Wordmark-White-Dark-Background-Logo.wine.svg",
     },
     { 
       name: "BMW",
@@ -24,15 +19,31 @@ const HallOfFame = () => {
     },
     { 
       name: "OpenAI",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg",
+      logo: "https://lh4.googleusercontent.com/proxy/giEDaX3GfzFq-HAvCa_92K-8lRvuedIQiGrBvxVAqXdRmXoNj-CTe0nJNJVM5P5DYZV7m3imSRVlx7YAPVu4gurNo4jSVXJ8d220_ZWhCyqz08KE53GqC54ayElFbrNb92iOdZMfYXz6",
     },
     { 
       name: "Brave",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/8/83/Brave_Browser_Logo.svg",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/Brave_icon_lionface.png",
     },
     { 
       name: "Opera",
       logo: "https://upload.wikimedia.org/wikipedia/commons/4/49/Opera_2015_icon.svg",
+    },
+    { 
+      name: "Samsung",
+      logo: "https://1000logos.net/wp-content/uploads/2017/06/Font-Samsung-Logo.jpg",
+    },
+    { 
+      name: "Grok",
+      logo: "https://cdn.dribbble.com/userupload/37006161/file/original-91cfcf910e30dc42f2c2577b531ee1fd.png?resize=752x&vertical=center",
+    },    
+    { 
+      name: "Supabase",
+      logo: "https://miro.medium.com/1*znpVac0II45Ysa0xIiB2dQ.png",
+    },
+    { 
+      name: "Swiggy",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/1/13/Swiggy_logo.png",
     },
   ];
 
@@ -45,37 +56,32 @@ const HallOfFame = () => {
         >
           Security Hall of Fame
         </h2>
-        <div className="max-w-3xl mx-auto">
-          <div 
-            ref={subtitleRef}
-            className={`flex items-center gap-3 mb-8 transition-all duration-700 delay-100 ${subtitleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-          >
-            <Shield className="w-6 h-6 text-primary" />
-            <p className="text-muted-foreground">
-              Organizations that have acknowledged my responsible vulnerability disclosures
-            </p>
-          </div>
-          <div 
-            ref={logosRef}
-            className="grid sm:grid-cols-2 md:grid-cols-3 gap-6"
-          >
-            {companies.map((company, idx) => (
-              <div
-                key={idx}
-                className={`flex flex-col items-center gap-3 p-4 border border-border bg-card rounded-sm hover:border-primary transition-all duration-700 ${logosVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-                style={{ transitionDelay: `${idx * 50 + 100}ms` }}
-              >
-                <img
-                  src={company.logo}
-                  alt={`${company.name} logo`}
-                  className="w-16 h-16 object-contain transition-all duration-300"
-                />
-                <span className="text-sm font-mono text-muted-foreground">
-                  {company.name}
-                </span>
-              </div>
-            ))}
-          </div>
+        <p 
+          ref={subtitleRef}
+          className={`text-center text-muted-foreground mb-12 transition-all duration-700 delay-100 ${subtitleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        >
+          Organizations that have acknowledged my responsible vulnerability disclosures
+        </p>
+        <div 
+          ref={logosRef}
+          className="flex flex-wrap items-center justify-center gap-8 md:gap-12"
+        >
+          {companies.map((company, idx) => (
+            <div
+              key={idx}
+              className={`flex flex-col items-center gap-2 transition-all duration-700 ${logosVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+              style={{ transitionDelay: `${idx * 100 + 200}ms` }}
+            >
+              <img
+                src={company.logo}
+                alt={`${company.name} logo`}
+                className="w-16 h-16 object-contain filter transition-all duration-300"
+              />
+              <span className="text-sm font-mono text-muted-foreground">
+                {company.name}
+              </span>
+            </div>
+          ))}
         </div>
       </div>
     </section>
