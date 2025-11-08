@@ -38,9 +38,9 @@ const About = () => {
             ref={rightRef}
             className={`space-y-6 transition-all duration-700 delay-200 ${rightVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
           >
-            <div>
+            <div className="border border-border p-6 rounded-sm bg-card hover:border-primary transition-all duration-700">
               <h3 className="text-xl font-mono font-semibold text-primary mb-4">Education</h3>
-              <ul className="space-y-2 text-muted-foreground">
+              <ul className="space-y-3 text-muted-foreground">
                 <li>• Bachelor of Technology in Electronics and Communication
                   <br />Vidya Academy of Science and Technology (2019-2023)
                 </li>
@@ -49,9 +49,9 @@ const About = () => {
                 </li>
               </ul>
             </div>
-            <div>
+            <div className="border border-border p-6 rounded-sm bg-card hover:border-primary transition-all duration-700">
               <h3 className="text-xl font-mono font-semibold text-primary mb-4">Core Expertise</h3>
-              <ul className="space-y-2 text-muted-foreground">
+              <ul className="space-y-3 text-muted-foreground">
                 <li>• Web Application Security Testing</li>
                 <li>• AI/ML Security & Adversarial Attacks</li>
                 <li>• Mobile Application Security</li>
