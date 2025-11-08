@@ -34,7 +34,9 @@ const Navigation = () => {
     { id: "skills", label: "Skills" },
     { id: "experience", label: "Experience" },
     { id: "projects", label: "Projects" },
+    { id: "ctfsrecognition", label: "CTFs & Recognition" },
     { id: "certifications", label: "Certifications" },
+    { id: "halloffame", label: "Security Hall of Fame" },
     { id: "contact", label: "Contact" },
   ];
 
