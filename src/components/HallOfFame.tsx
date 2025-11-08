@@ -23,7 +23,7 @@ const HallOfFame = () => {
     },
     { 
       name: "Microsoft",
-      logo: "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/RWCZER-Legal-IP-Trademarks-CP-MS-logo-740x417-1?wid=406&hei=230&fit=crop&resSharp=1",
+      logo: "https://s3-alpha.figma.com/hub/file/2747494711/31b6ad5c-b404-4086-a685-89b1d5294f1c-cover.png",
     },
     { 
       name: "Hackerone",
@@ -31,7 +31,7 @@ const HallOfFame = () => {
     },
     { 
       name: "Firefox",
-      logo: "https://www.cnet.com/a/img/resize/33dd106f367bb2e25272cba2c532cd4b93a6e7d9/hub/2019/06/05/644162fd-5f99-4a9c-becf-37ebcf2d97ea/firefox-new-icon-2019-06.jpg?auto=webp&fit=crop&height=900&width=1200",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/1200px-Firefox_logo%2C_2019.svg.png",
     },
     { 
       name: "Brave",
@@ -47,7 +47,7 @@ const HallOfFame = () => {
     },
     { 
       name: "Grok",
-      logo: "https://cdn.dribbble.com/userupload/37006161/file/original-91cfcf910e30dc42f2c2577b531ee1fd.png?resize=752x&vertical=center",
+      logo: "https://images.seeklogo.com/logo-png/61/2/grok-logo-png_seeklogo-615650.png",
     },    
     { 
       name: "Supabase",
