@@ -37,7 +37,7 @@ const Hero = () => {
             onClick={() => scrollToSection("projects")}
             className="bg-primary text-background hover:bg-accent font-mono w-full sm:w-1/3"
           >
-            View Work
+            Projects
           </Button>
           <Button
             onClick={() => scrollToSection("contact")}
