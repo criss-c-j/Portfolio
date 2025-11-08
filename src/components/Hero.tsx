@@ -26,17 +26,23 @@ const Hero = () => {
           Specializing in Web Security, Mobile Security, AI/ML Security, and Responsible Disclosure. 
           45+ vulnerabilities discovered across major platforms including Swiggy, TikTok, BMW, LinkedIn, Samsung and OpenAI.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-2xl mx-auto">
           <Button
             onClick={() => scrollToSection("projects")}
-            className="bg-primary text-background hover:bg-accent font-mono"
+            className="bg-primary text-background hover:bg-accent font-mono w-full sm:w-1/3"
           >
             View Work
           </Button>
           <Button
+            onClick={() => scrollToSection("experience")}
+            className="bg-primary text-background hover:bg-accent font-mono w-full sm:w-1/3"
+          >
+            Experience
+          </Button>
+          <Button
             onClick={() => scrollToSection("contact")}
             variant="outline"
-            className="border-primary text-primary hover:bg-primary hover:text-background font-mono"
+            className="border-primary text-primary hover:bg-primary hover:text-background font-mono w-full sm:w-1/3"
           >
             Contact Me
           </Button>
