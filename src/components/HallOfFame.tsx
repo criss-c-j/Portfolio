@@ -23,7 +23,7 @@ const HallOfFame = () => {
     },
     { 
       name: "Microsoft",
-      logo: "https://s3-alpha.figma.com/hub/file/2747494711/31b6ad5c-b404-4086-a685-89b1d5294f1c-cover.png",
+      logo: "https://icon2.cleanpng.com/20180824/wox/kisspng-microsoft-corporation-microsoft-software-assurance-26-microsoft-1713948935718.webp",
     },
     { 
       name: "Hackerone",
