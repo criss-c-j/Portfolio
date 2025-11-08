@@ -33,7 +33,7 @@ const CTFsRecognition = () => {
           >
             <div className="flex items-center gap-3 mb-6">
               <Trophy className="w-6 h-6 text-primary" />
-              <h3 className="text-xl font-mono font-semibold text-foreground">
+              <h3 className="text-xl font-mono font-semibold text-primary">
                 CTF Competitions
               </h3>
             </div>
@@ -55,7 +55,7 @@ const CTFsRecognition = () => {
           >
             <div className="flex items-center gap-3 mb-6">
               <Award className="w-6 h-6 text-primary" />
-              <h3 className="text-xl font-mono font-semibold text-foreground">
+              <h3 className="text-xl font-mono font-semibold text-primary">
                 Achievements
               </h3>
             </div>
