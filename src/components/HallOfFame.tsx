@@ -7,7 +7,7 @@ const HallOfFame = () => {
   const companies = [
     { 
       name: "TikTok",
-      logo: "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg",
+      logo: "https://www.logo.wine/a/logo/TikTok/TikTok-Logomark%26Wordmark-White-Dark-Background-Logo.wine.svg",
     },
     { 
       name: "BMW",
@@ -19,7 +19,7 @@ const HallOfFame = () => {
     },
     { 
       name: "OpenAI",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg",
+      logo: "https://lh4.googleusercontent.com/proxy/giEDaX3GfzFq-HAvCa_92K-8lRvuedIQiGrBvxVAqXdRmXoNj-CTe0nJNJVM5P5DYZV7m3imSRVlx7YAPVu4gurNo4jSVXJ8d220_ZWhCyqz08KE53GqC54ayElFbrNb92iOdZMfYXz6",
     },
     { 
       name: "Brave",
@@ -35,7 +35,7 @@ const HallOfFame = () => {
     },
     { 
       name: "Grok",
-      logo: "https://images.seeklogo.com/logo-png/61/2/grok-logo-png_seeklogo-615650.png",
+      logo: "https://cdn.dribbble.com/userupload/37006161/file/original-91cfcf910e30dc42f2c2577b531ee1fd.png?resize=752x&vertical=center",
     },    
     { 
       name: "Supabase",
